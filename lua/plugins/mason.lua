@@ -3,6 +3,7 @@ return {
         "williamboman/mason.nvim",
         dependencies = {
             "WhoIsSethDaniel/mason-tool-installer.nvim",
+            "williamboman/mason-lspconfig.nvim",
         },
         config = function()
             local mason = require("mason")
@@ -24,15 +25,10 @@ return {
                 ensure_installed = {
                     "prettierd", -- prettier formatter
                     "prettier",  -- prettier formatter
-                    "stylua",    -- lua formatter
                     "eslint_d",  -- js linter
                 },
             })
-        end
-    },
-    {
-        "williamboman/mason-lspconfig.nvim",
-        config = function()
+
             vim.keymap.set('n', '<leader>do', vim.diagnostic.open_float)
             vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
             vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
