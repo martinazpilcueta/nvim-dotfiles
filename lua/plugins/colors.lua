@@ -1,5 +1,5 @@
 return {
- "EdenEast/nightfox.nvim", 
+    "EdenEast/nightfox.nvim",
     lazy = false,
     priority = 1000,
     config = function()
