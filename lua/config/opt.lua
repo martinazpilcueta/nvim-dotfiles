@@ -1,16 +1,18 @@
+local indent_space = 2
 vim.opt.wrap = false
 vim.opt.colorcolumn = "80"
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 vim.opt.termguicolors = true
 vim.opt.nu = true
 vim.opt.relativenumber = true
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
+vim.opt.tabstop = indent_space
+vim.opt.softtabstop = indent_space
+vim.opt.shiftwidth = indent_space
 vim.opt.expandtab = true
 vim.opt.smartindent = true
 vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.scrolloff = 8
-
